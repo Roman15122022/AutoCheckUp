@@ -1,5 +1,5 @@
 function App(): JSX.Element {
-  return <div />
+  return <div></div>
 }
 
 export default App
