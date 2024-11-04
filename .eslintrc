@@ -79,7 +79,10 @@
           {
             "allowExpressions": true,
             "allowTypedFunctionExpressions": true,
-            "allowHigherOrderFunctions": true
+            "allowHigherOrderFunctions": true,
+            "allowedNames": [
+              "^use[A-Z].*"
+            ]
           }
         ]
       }
