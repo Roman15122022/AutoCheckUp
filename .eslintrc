@@ -23,7 +23,7 @@
     "react/jsx-curly-brace-presence": ["error", "never"],
     "import/newline-after-import": "error",
     "newline-before-return": "error",
-    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-function-return-type": "warn",
     "prefer-destructuring": ["error", { "array": true, "object": true }],
     "padding-line-between-statements": [
       "error",
@@ -75,7 +75,7 @@
       "excludedFiles": ["use*.ts"],
       "rules": {
         "@typescript-eslint/explicit-function-return-type": [
-          "error",
+          "warn",
           {
             "allowExpressions": true,
             "allowTypedFunctionExpressions": true,
