@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client'
 
-import 'index.css'
+import 'src/index.css'
 import App from 'src/App'
 
 import AppProviders from 'src/features/AppProviders'

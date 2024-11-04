@@ -1,5 +1,5 @@
-import { TRANSLATIONS } from '../constants'
+import { TRANSLATIONS } from 'src/constants'
 
-import { Language } from './enums'
+import { Language } from 'src/types/enums'
 
 export type Locale = (typeof TRANSLATIONS)[Language.EN]

@@ -1,3 +1,4 @@
+import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { StrictMode } from 'react'
 import { QueryClientProvider } from '@tanstack/react-query'
@@ -11,11 +12,13 @@ const AppProviders = ({ children }: AppProviderProps): JSX.Element => {
 
   return (
     <StrictMode>
-      <Provider store={store}>
-        <QueryClientProvider client={queryClient}>
-          {children}
-        </QueryClientProvider>
-      </Provider>
+      <BrowserRouter>
+        <Provider store={store}>
+          <QueryClientProvider client={queryClient}>
+            {children}
+          </QueryClientProvider>
+        </Provider>
+      </BrowserRouter>
     </StrictMode>
   )
 }
