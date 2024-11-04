@@ -1,4 +1,4 @@
-import { setupStore } from '../../store'
+import { setupStore } from 'src/store'
 
 export const useAppProviders = () => {
   const store = setupStore()
