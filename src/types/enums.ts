@@ -5,4 +5,9 @@ export enum Language {
 
 export enum RoutesPath {
   HOME = '/',
+  ANALYTICS = '/analytics',
+}
+
+export enum LocalStorageKeys {
+  LOCALE = 'locale',
 }

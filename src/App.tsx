@@ -1,13 +1,9 @@
-import AppRoutes from 'src/features/AppRoutes'
+import { useApp } from 'src/hooks/useApp'
 
-//only layout
 function App(): JSX.Element {
-  return (
-    <div>
-      <div className="text-center text-3xl">Hello team</div>
-      <AppRoutes />
-    </div>
-  )
+  const { locale } = useApp()
+
+  return <div>{locale.setting}</div>
 }
 
 export default App

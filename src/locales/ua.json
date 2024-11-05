@@ -1,3 +1,9 @@
 {
+  "layout": {
+    "home": "Головна",
+    "analytics": "Аналітика",
+    "setting": "Налаштування",
+    "calendar": "Календарь"
+  },
   "homePage": {}
 }
