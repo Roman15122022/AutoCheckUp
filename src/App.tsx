@@ -1,12 +1,17 @@
+import AppSidebar from 'src/features/AppSidebar'
 import AppRoutes from 'src/features/AppRoutes'
 
-//only layout
+import { SidebarProvider, SidebarTrigger } from 'src/components/shadcn/sidebar'
+
 function App(): JSX.Element {
   return (
-    <div>
-      <div className="text-center text-3xl">Hello team</div>
-      <AppRoutes />
-    </div>
+    <SidebarProvider>
+      <AppSidebar />
+      <main>
+        <SidebarTrigger />
+        <AppRoutes />
+      </main>
+    </SidebarProvider>
   )
 }
 
