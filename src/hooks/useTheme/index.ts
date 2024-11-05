@@ -2,7 +2,10 @@ import { LocalStorageKeys, ThemeVariants } from 'src/types'
 import { useEffect, useState } from 'react'
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState<ThemeVariants>(localStorage.getItem(LocalStorageKeys.THEME) as ThemeVariants || ThemeVariants.DARK)
+  const [theme, setTheme] = useState<ThemeVariants>(
+    (localStorage.getItem(LocalStorageKeys.THEME) as ThemeVariants) ||
+      ThemeVariants.DARK,
+  )
 
   const handleSetTheme = (themeValue: ThemeVariants) => {
     setTheme(themeValue)
@@ -22,7 +25,6 @@ export const useTheme = () => {
   useEffect(() => {
     handleSetTheme(theme)
   }, [])
-
 
   return { theme, handleSetTheme }
 }
