@@ -1,5 +1,11 @@
+import Container from 'src/components/Container'
+
 const Calendar = (): JSX.Element => {
-  return <div>Calendar</div>
+  return (
+    <Container>
+      <div>Calendar</div>
+    </Container>
+  )
 }
 
 export default Calendar

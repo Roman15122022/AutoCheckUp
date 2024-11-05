@@ -1,7 +1,11 @@
-import React from 'react'
+import Container from 'src/components/Container'
 
 const Analytics = (): JSX.Element => {
-  return <div>Analytics</div>
+  return (
+    <Container>
+      <div>Analytics</div>
+    </Container>
+  )
 }
 
 export default Analytics

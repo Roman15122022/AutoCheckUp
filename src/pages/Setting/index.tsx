@@ -1,5 +1,11 @@
+import Container from 'src/components/Container'
+
 const Setting = (): JSX.Element => {
-  return <div>Setting</div>
+  return (
+    <Container>
+      <div>Setting</div>
+    </Container>
+  )
 }
 
 export default Setting
