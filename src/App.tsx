@@ -1,9 +1,18 @@
-import { useApp } from 'src/hooks/useApp'
+import AppSidebar from 'src/features/AppSidebar'
+import AppRoutes from 'src/features/AppRoutes'
+
+import { SidebarProvider, SidebarTrigger } from 'src/components/shadcn/sidebar'
 
 function App(): JSX.Element {
-  const { locale } = useApp()
-
-  return <div>{locale.setting}</div>
+  return (
+    <SidebarProvider>
+      <AppSidebar />
+      <main>
+        <SidebarTrigger />
+        <AppRoutes />
+      </main>
+    </SidebarProvider>
+  )
 }
 
 export default App
