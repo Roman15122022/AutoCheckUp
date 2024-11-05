@@ -1,3 +1,9 @@
 {
+  "layout": {
+    "home": "Home",
+    "analytics": "Analytics",
+    "setting": "Setting",
+    "calendar": "Calendar"
+  },
   "homePage": {}
 }
