@@ -1,4 +1,3 @@
-import { Language } from 'src/types'
 import { useLocales } from 'src/contexts'
 
 export const useAppToggleLanguage = () => {
