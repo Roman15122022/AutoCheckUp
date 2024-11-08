@@ -3,19 +3,19 @@ pre-commit:
   commands:
     lint:
       glob: '*.{ts,tsx}'
-      run: yarn run eslint --fix
+      run: npm run lint --fix
     format:
       glob: '*.{ts,tsx}'
-      run: yarn run prettier --write
+      run: npm run prettier
 
 commit-msg:
   parallel: true
   scripts:
-    "commit-msg.sh":
+    'commit-msg.sh':
       runner: bash
 
 prepare-commit-msg:
   parallel: true
   scripts:
-    "prepare-commit-msg.sh":
+    'prepare-commit-msg.sh':
       runner: bash

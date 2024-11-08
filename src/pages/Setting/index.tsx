@@ -1,9 +1,11 @@
+import AppToggleLanguage from 'src/features/AppToggleLanguage'
 import Container from 'src/components/Container'
 
 const Setting = (): JSX.Element => {
   return (
     <Container>
-      <div>Setting</div>
+      <div>Settings</div>
+      <AppToggleLanguage />
     </Container>
   )
 }
